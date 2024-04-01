@@ -1,8 +1,8 @@
 ## P Model Benchmark
 
-1. Examples from tutorials: https://github.com/p-org/P/tree/master
-2. Drona: https://github.com/Drona-Org/Drona [paper](https://arxiv.org/pdf/2008.09707.pdf)
-3. SOTERonROS: https://github.com/Drona-Org/SOTERonROS/tree/master  [paper](https://people.eecs.berkeley.edu/~sseshia/pubdir/iccps17-drona.pdf)
+1. Examples from tutorials: https://github.com/p-org/P/
+2. Drona ([paper](https://arxiv.org/pdf/2008.09707.pdf)): https://github.com/Drona-Org/Drona
+3. SOTERonROS ([paper](https://people.eecs.berkeley.edu/~sseshia/pubdir/iccps17-drona.pdf)): https://github.com/Drona-Org/SOTERonROS/
 
 
 ## Installation
