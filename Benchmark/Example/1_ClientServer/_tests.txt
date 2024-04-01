@@ -1,0 +1,44 @@
+Below are the unit tests to test the operation of the P models and P specifications provided:
+
+Test.p
+
+:/** Test script in P ***/
+test "BankServer and Client interaction" increments version {
+
+  // initialize account balance
+  var init_balance: map[int, int];
+  init_balance[10] = 100; // accountId = 10, balance = 100
+
+  var server = new BankServer(initialBalance = init_balance);
+  var client = new Client(input = (serv = server, accountId = 10, balance = 100));
+
+  var spec = new BankBalanceIsAlwaysCorrect();
+  send spec, eSpec_BankBalanceIsAlwaysCorrect_Init, init_balance;
+}
+ 
+test "AbstractBankServer and Client interaction" increments version {
+
+  // initialize account balance
+  var init_balance: map[int, int];
+  init_balance[10] = 100; // accountId = 10, balance = 100
+
+  var server = new AbstractBankServer(init_balance = init_balance);
+  var client = new Client(input = (serv = server, accountId = 10, balance = 100));
+
+  var spec = new BankBalanceIsAlwaysCorrect();
+  send spec, eSpec_BankBalanceIsAlwaysCorrect_Init, init_balance;
+}
+
+test "GuaranteedWithDrawProgress liveness test" increments version {
+  // initialize account balance
+  var init_balance: map[int, int];
+  init_balance[10] = 100; // accountId = 10, balance = 100
+
+  var server = new BankServer(initialBalance = init_balance);
+  var client = new Client(input = (serv = server, accountId = 10, balance = 100));
+
+  var spec = new GuaranteedWithDrawProgress();
+  // the GuaranteedWithDrawProgress doesn't need initialization.
+}
+
+These simple tests can be expanded to have multiple clients and servers, multiple accounts which would require more complex coordination in updating balances, handling multiple requests and more complicated scenarios of banking operations.
