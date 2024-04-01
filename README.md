@@ -1,22 +1,8 @@
-## P Model
+## P Model Benchmark
 
-A few hand-crafted P models: https://github.com/Drona-Org/SOTERonROS/tree/master
-Papers: https://drona-org.github.io/Drona/
-
-The case studies: https://p-org.github.io/P/casestudies/
-
-## UML Model
-
-1. Dataset of UML-English:
-
-https://github.com/songyang-dev/uml-classes-and-specs
-Paper: https://arxiv.org/pdf/2210.14441.pdf
-
-Only UML (mined):
-https://ieeexplore.ieee.org/abstract/document/7962411
-
-Modelset: https://github.com/modelset/modelset-dataset
-https://models-lab.github.io/blog/2021/modelset/
+1. Examples from tutorials: https://github.com/p-org/P/tree/master
+2. Drona: https://github.com/Drona-Org/Drona [paper](https://arxiv.org/pdf/2008.09707.pdf)
+3. SOTERonROS: https://github.com/Drona-Org/SOTERonROS/tree/master  [paper](https://people.eecs.berkeley.edu/~sseshia/pubdir/iccps17-drona.pdf)
 
 
 ## Installation
